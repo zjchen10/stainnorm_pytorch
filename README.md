@@ -6,3 +6,4 @@ PyTorch implementation of Macenko stain normalization (https://www.cs.unc.edu/~m
 
 Works with most PyTorch version. This implementation is adapted from TIA Toolbox (https://tia-toolbox.readthedocs.io/en/stable/_notebooks/jnb/02-stain-normalization.html). Check the Jupyter Notebook for how to use the algorithm.
 
+Note: the algorithm depends on torch.linalg.eigh. Since the eigenvectors of a symmetric matrix are not unique (different signs), different hardware and software may compute different eigenvectors. The same image can be normalized slightly differently on different machines/devices or with different versions of pytorch.
